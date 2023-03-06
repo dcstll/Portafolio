@@ -1,0 +1,155 @@
+.gridcontainer{
+    width: 100vw;
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.6fr 0.3fr;
+    grid-gap: 0.8rem;
+  }
+  
+  .item{
+    width: 17rem;
+    border: 3px solid #001E1D;
+    box-shadow: -8px 0px 29px -6px 
+                  rgba(0, 30, 29, 0.30);
+  }
+  
+  .item#uno{
+    background-color: #E8E4E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item#uno img{
+    width: 90%;
+  }
+  
+  .item#dos{
+    background-color: #001E1D;
+    color: #FFFFFE;
+    font-family: 'Yeseva One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item#dos h1{
+    width: 17rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0 !important;
+  }
+  
+  .item#tres{
+    background-color: #F9BC60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item#tres p{
+    color: #001E1D;
+    width: 11rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .item#cuatro{
+    display: none;
+  }
+  
+  .item#cinco{
+    display: none;
+  }
+  
+  /* RESPONSIVE HOME */
+  
+  /* tablets */
+  @media screen and (min-width: 780px) {
+    div.item{
+      width: 30rem;
+    }
+  }
+  
+  /* desktop */
+  @media screen and (min-width: 520px) {
+    .grid-container{
+      margin: 6em auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .Grid{
+      height: 80vh;
+      width: 51.5rem;
+      display: grid;
+      grid-template-columns: 1.4fr 0.7fr 0.7fr 0.7fr 1.4fr 1.4fr;
+      grid-template-rows: 1.1fr 1.1fr 0.8fr;
+      grid-gap: 0.8rem;
+      align-self: center;
+    }
+    
+    div.item{
+      width: auto;
+      border: 3px solid #001E1D;
+      box-shadow: -8px 0px 29px -6px 
+                    rgba(0, 30, 29, 0.30);
+    }
+    
+    div.item#uno{
+      background-color: #E8E4E6;
+      grid-area: 1 / 1 / 3 / 5;
+    }
+    
+    div.item#dos{
+      grid-area: 1 / 5 / 2 / 7;
+    }
+    
+    div.item#dos h1{
+      width: 17rem;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 !important;
+    }
+    
+    div.item#tres{
+      background-color: #F9BC60;
+      grid-area: 2 / 5 / 3 / 7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    div.item#tres p{
+      width: 11rem;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    div.item#cuatro{
+      display: flex;
+      background-color: #F9BC60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item#cuatro img{
+      width: 80%;
+    }
+    
+    div.item#cinco{
+      display: flex;
+      background-color: #E8E4E6;
+      grid-area: 3 / 2 / 4 / 7;
+    }
+  }
