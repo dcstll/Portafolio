@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import Menu from './Components/Menu/Menu'
-import Home from './Components/Home/Home'
-import About from './Components/About/About'
-import Work from './Components/Work/Work'
-import Contact from './Components/Contact/Contact'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu from './Components/Menu/Menu';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Work from './Components/Work/Work';
+import Contact from './Components/Contact/Contact';
 
 function App() {
     return (
